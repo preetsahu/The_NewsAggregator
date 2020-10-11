@@ -11,6 +11,7 @@
     <section class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">The News Aggregator</h1>
                 <div class="h-1 bg-gray-200 rounded overflow-hidden">
                     <div class="w-24 h-full bg-indigo-500"></div>
                 </div>
@@ -18,7 +19,7 @@
                     <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
                         <form method="POST" action="{% url 'scrape' %}">
                             {% csrf_token %}
-                            <button type="submit" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get news</button>
+                            <button type="submit" class="object-center flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get news</button>
                         </form>
                     </h1>
                     <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Prioritize your daily News.</p>
